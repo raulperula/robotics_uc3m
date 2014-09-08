@@ -6,8 +6,6 @@ Bachelor's Degree in Industrial Electronics and Automation
 University Carlos III of Madrid.
 Leganes, Madrid, Spain.
 
-Material link: http://goo.gl/fs11vh
-
 Contact info:
 
 Raúl Pérula-Martínez
