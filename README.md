@@ -1,4 +1,4 @@
-roboticsUC3M
+Robotics UC3M
 ============
 
 C++ examples of the subject Robotics.
