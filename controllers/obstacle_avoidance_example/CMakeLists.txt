@@ -13,4 +13,4 @@ add_definitions(-I${WEBOTS_HOME}/include/controller/cpp -I${WEBOTS_HOME}/include
 add_executable(obstacle_avoidance_example obstacle_avoidance_example.cpp MyRobot.cpp)
 
 # link to libraries
-target_link_libraries(obstacle_avoidance_example ${C_CONTROLLER_LIBRARY} ${CPP_CONTROLLER_LIBRARY} m)
+target_link_libraries(obstacle_avoidance_example ${C_CONTROLLER_LIBRARY} ${CPP_CONTROLLER_LIBRARY})

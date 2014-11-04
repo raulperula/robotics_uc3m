@@ -1,13 +1,15 @@
+#ifndef MY_ROBOT_H_
+#define MY_ROBOT_H_
+
 /**
- * @file    main_template.cpp
- * @brief   A template for webots projects.
+ * @file    MyRobot.h
+ * @brief   Controller example for a robot to follow walls.
  *
- * @author  Name Surname <nick@alumnos.uc3m.es>
- * @date    2014-07
+ * @author  Raul Perula-Martinez <raul.perula@uc3m.es>
+ * @date    2014-11
  */
 
 #include <iostream>
-
 #include <webots/DifferentialWheels.hpp>
 
 using namespace std;
@@ -18,12 +20,34 @@ using namespace webots;
 #define MAX_SPEED           50
 
 class MyRobot : public DifferentialWheels {
+    public:
+        /**
+         * @brief Empty constructor of the class.
+         */
+        MyRobot();
+
+        /**
+         * @brief Destructor of the class.
+         */
+        ~MyRobot();
+
+        /**
+         * @brief Function with the logic of the controller.
+         * @param
+         * @return
+         */
+        void run();
+
     private:
         int _time_step;
 
-        DistanceSensor * _distance_sensor[NUM_DISTANCE_SENSOR];
+        // velocities
         double _left_speed, _right_speed;
 
+        // sensors
+        DistanceSensor *_distance_sensor[NUM_DISTANCE_SENSOR];
+
+        // working modes
         enum Mode {
             STOP,
             FORWARD,
@@ -33,23 +57,6 @@ class MyRobot : public DifferentialWheels {
         };
 
         Mode _mode;
-
-    public:
-        // You may need to define your private methods or variables, like
-        //  Constructors, helper functions, etc.
-
-        /**
-         * @brief Empty constructor of the class.
-         */
-        MyRobot();
-        
-        /**
-         * @brief Destructor of the class.
-         */
-        ~MyRobot();
-
-        /**
-         * @brief User defined function for initializing and running the template class.
-         */
-        void run();
 };
+
+#endif

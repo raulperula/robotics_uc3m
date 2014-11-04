@@ -1,17 +1,15 @@
 /**
- * @file    main.cpp
+ * @file    compass_example.cpp
  * @brief   A simple example for maintaining a straight line with the compass.
  *
  * @author  Raul Perula-Martinez <raul.perula@uc3m.es>
- * @date    2014-07
+ * @date    2014-11
  */
 
 #include "MyRobot.h"
 
-/*
- * Main program.
- * The arguments of the main function can be specified by the
- * "controllerArgs" field of the Robot node
+/**
+ * @brief Main program.
  */
 int main(int argc, char **argv)
 {
@@ -23,3 +21,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+

@@ -1,5 +1,8 @@
+#ifndef MY_ROBOT_H_
+#define MY_ROBOT_H_
+
 /**
- * @file    main_template.cpp
+ * @file    MyRobot.h
  * @brief   A template for webots projects.
  *
  * @author  Name Surname <nick@alumnos.uc3m.es>
@@ -26,20 +29,15 @@ using namespace webots;
 // Note that this class derives from DifferentialWheels who derives from Robot,
 // both inherits all its functions
 class MyRobot : public DifferentialWheels {
-    private:
-        // You may need to define your private methods or variables, like
-        //  Compass* _my_compass;
-        int _time_step;
-
     public:
         // You may need to define your private methods or variables, like
         //  Constructors, helper functions, etc.
-    
+
         /**
          * @brief Empty constructor of the class.
          */
         MyRobot();
-        
+
         /**
          * @brief Destructor of the class.
          */
@@ -47,6 +45,15 @@ class MyRobot : public DifferentialWheels {
 
         /**
          * @brief User defined function for initializing and running the template class.
+         * @param
+         * @return
          */
         void run();
+
+    private:
+        // You may need to define your private methods or variables, like
+        //  Compass* _my_compass;
+        int _time_step;
 };
+
+#endif

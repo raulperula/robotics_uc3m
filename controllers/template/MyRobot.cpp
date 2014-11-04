@@ -1,5 +1,5 @@
 /**
- * @file    main_template.cpp
+ * @file    MyRobot.cpp
  * @brief   A template for webots projects.
  *
  * @author  Name Surname <nick@alumnos.uc3m.es>
@@ -41,7 +41,7 @@ void MyRobot::run()
         // Enter here functions to read sensor data, like:
         //  const double *compass_val = _my_compass->getValues();
 
-        // Process sensor data here
+        // Process sensor data here (logic control)
 
         // Enter here functions to send actuator commands, like:
         //  setSpeed(_left_speed, _right_speed);

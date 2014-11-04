@@ -13,4 +13,4 @@ add_definitions(-I${WEBOTS_HOME}/include/controller/cpp -I${WEBOTS_HOME}/include
 add_executable(wall_follower_example wall_follower_example.cpp MyRobot.cpp)
 
 # link to libraries
-target_link_libraries(wall_follower_example ${C_CONTROLLER_LIBRARY} ${CPP_CONTROLLER_LIBRARY} m)
+target_link_libraries(wall_follower_example ${C_CONTROLLER_LIBRARY} ${CPP_CONTROLLER_LIBRARY})

@@ -1,5 +1,5 @@
 /**
- * @file    main_template.cpp
+ * @file    template.cpp
  * @brief   A template for webots projects.
  *
  * @author  Name Surname <nick@alumnos.uc3m.es>

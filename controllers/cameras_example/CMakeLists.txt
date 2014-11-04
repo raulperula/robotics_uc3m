@@ -13,4 +13,4 @@ add_definitions(-I${WEBOTS_HOME}/include/controller/cpp -I${WEBOTS_HOME}/include
 add_executable(cameras_example cameras_example.cpp MyRobot.cpp)
 
 # link to libraries
-target_link_libraries(cameras_example ${C_CONTROLLER_LIBRARY} ${CPP_CONTROLLER_LIBRARY} m)
+target_link_libraries(cameras_example ${C_CONTROLLER_LIBRARY} ${CPP_CONTROLLER_LIBRARY})
