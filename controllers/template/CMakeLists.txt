@@ -10,6 +10,7 @@ find_library(C_CONTROLLER_LIBRARY Controller ${WEBOTS_HOME}/lib)
 add_definitions(-I${WEBOTS_HOME}/include/controller/cpp -I${WEBOTS_HOME}/include -Wall -I${WEBOTS_HOME}/include/controller/c -DLINUX)
 
 # add main executable
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR})
 add_executable(template template.cpp MyRobot.cpp)
 
 # link to libraries
