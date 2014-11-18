@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation -0.567245 -0.55405 -0.609313 2.06597
-  position 0.487738 33.7308 4.96356
+  orientation 0.575092 0.546831 0.608477 4.19948
+  position 1.16342 32.9103 4.6094
 }
 Background {
   skyColor [
@@ -21,36 +21,21 @@ PointLight {
   ambientIntensity 4
   intensity 0.1
   location 3 6 5
-  radius 1000
-}
-PointLight {
-  ambientIntensity 4
-  intensity 0.1
-  location -3 6 5
-  radius 1000
-}
-PointLight {
-  ambientIntensity 4
-  intensity 0.1
-  location -3 6 -5
+  on FALSE
   radius 1000
 }
 PointLight {
   ambientIntensity 4
   intensity 0.1
   location 3 6 -5
+  on FALSE
   radius 1000
 }
 PointLight {
   ambientIntensity 4
   intensity 0.1
   location 3 6 -10
-  radius 1000
-}
-PointLight {
-  ambientIntensity 4
-  intensity 0.1
-  location -3 6 -10
+  on FALSE
   radius 1000
 }
 PointLight {
@@ -62,55 +47,43 @@ PointLight {
 PointLight {
   ambientIntensity 4
   intensity 0.1
-  location 3 6 10
-  radius 1000
-}
-PointLight {
-  ambientIntensity 4
-  intensity 0.1
-  location 6 6 10
-  radius 1000
-}
-PointLight {
-  ambientIntensity 4
-  intensity 0.1
   location 6 6 5
+  on FALSE
   radius 1000
 }
 PointLight {
   ambientIntensity 4
   intensity 0.1
   location 6 6 0
+  on FALSE
   radius 1000
 }
 PointLight {
   ambientIntensity 4
   intensity 0.1
   location 6 6 -5
+  on FALSE
   radius 1000
 }
 PointLight {
   ambientIntensity 4
   intensity 0.1
   location 6 6 -10
+  on FALSE
   radius 1000
 }
 PointLight {
   ambientIntensity 4
   intensity 0.1
   location -6 6 -10
+  on FALSE
   radius 1000
 }
 PointLight {
   ambientIntensity 1
   intensity 0.3
   location -6 6 -5
-  radius 1000
-}
-PointLight {
-  ambientIntensity 4
-  intensity 0.1
-  location -6 6 0
+  on FALSE
   radius 1000
 }
 PointLight {
@@ -119,11 +92,55 @@ PointLight {
   location -6 6 5
   radius 1000
 }
-PointLight {
-  ambientIntensity 4
-  intensity 0.1
-  location -6 6 10
-  radius 1000
+DEF CiviliansRoomLight SpotLight {
+  ambientIntensity 1
+  attenuation 1 0.2 0.005
+  beamWidth 1
+  cutOffAngle 1.57
+  direction -0.54 0 -0.05
+  intensity 1.57
+  location 4.77 0.83 9.32
+  castShadows TRUE
+}
+DEF StartRoomLight2 SpotLight {
+  ambientIntensity 2
+  attenuation 1 0.2 0.01
+  beamWidth 1
+  cutOffAngle 1.57
+  direction -0.54 0 -0.05
+  intensity 1.57
+  location 4.77 0.83 -7.95
+  castShadows TRUE
+}
+DEF StartRoomLight1 SpotLight {
+  ambientIntensity 2
+  attenuation 1 0.2 0.01
+  beamWidth 1
+  cutOffAngle 1.57
+  direction 0.5 0 -0.33
+  intensity 2
+  location -5 0.83 -7.71
+  castShadows TRUE
+}
+DEF Corridor1Light SpotLight {
+  ambientIntensity 2
+  attenuation 1 0.2 0.01
+  beamWidth 1
+  cutOffAngle 1.57
+  direction 0.5 0 -0.33
+  intensity 2
+  location -5 0.83 -1
+  castShadows TRUE
+}
+DEF Corridor2Light SpotLight {
+  ambientIntensity 2
+  attenuation 1 0.2 0.01
+  beamWidth 1.2
+  cutOffAngle 1.57
+  direction -0.9 0 0
+  intensity 2
+  location 4.77 0.83 2
+  castShadows TRUE
 }
 Solid {
   translation 4.9 1 0
@@ -204,28 +221,8 @@ Solid {
   locked TRUE
 }
 Solid {
-  translation -4.17203 1 7.52829
-  rotation 0 1 0 1.5708
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.2 2 1.5
-      }
-    }
-  ]
-  boundingObject Box {
-    size 0.2 2 1.5
-  }
-  locked TRUE
-}
-Solid {
-  translation 3.5 1 4.36957
-  rotation 0 1 0 1.5708
+  translation 3.32172 0.1 4.99371
+  rotation 1 0 0 1.5708
   children [
     Shape {
       appearance Appearance {
@@ -320,26 +317,6 @@ Solid {
   ]
   boundingObject Cylinder {
     radius 0.2
-  }
-  locked TRUE
-}
-Solid {
-  translation 4.25 1 -6.5
-  rotation 0 1 0 1.5708
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.2 2 1.5
-      }
-    }
-  ]
-  boundingObject Box {
-    size 0.2 2 1.5
   }
   locked TRUE
 }
@@ -504,8 +481,8 @@ Solid {
   locked TRUE
 }
 Solid {
-  translation -1.12501 1 6.4996
-  rotation 0 1 0 2.4
+  translation -0.03501 1 7.5196
+  rotation 0 1 0 1.58
   children [
     Shape {
       appearance Appearance {
@@ -514,32 +491,12 @@ Solid {
         }
       }
       geometry Box {
-        size 0.2 2 3
+        size 0.2 2 4
       }
     }
   ]
   boundingObject Box {
-    size 0.2 2 3
-  }
-  locked TRUE
-}
-Solid {
-  translation 1.43639 1 6.96537
-  rotation 0 1 0 0.7
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.2 2 1.8
-      }
-    }
-  ]
-  boundingObject Box {
-    size 0.2 2 1.8
+    size 0.2 2 4
   }
   locked TRUE
 }
@@ -644,46 +601,6 @@ Solid {
   locked TRUE
 }
 Solid {
-  translation 1.90658 1 -1.46055
-  rotation 0 1 0 1.5708
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.2 2 3
-      }
-    }
-  ]
-  boundingObject Box {
-    size 0.2 2 3
-  }
-  locked TRUE
-}
-Solid {
-  translation 0.75 1 -6.5
-  rotation 0 1 0 1.5708
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {
-          diffuseColor 1 1 1
-        }
-      }
-      geometry Box {
-        size 0.2 2 3
-      }
-    }
-  ]
-  boundingObject Box {
-    size 0.2 2 3
-  }
-  locked TRUE
-}
-Solid {
   translation -3.5 1 -6.5
   rotation 0 1 0 1.5708
   children [
@@ -703,8 +620,588 @@ Solid {
   }
   locked TRUE
 }
+DEF LARGE_BOX Solid {
+  translation -1.00379 0.3 -2.5064
+  rotation 0 1 0 0.4
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation -1.84308 0.3 -2.3862
+  rotation 0 1 0 1.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 4.42463 0.3 -7.25152
+  rotation 0 1 0 3.4
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation -2.70125 0.3 1.92119
+  rotation 0 1 0 1.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation -0.0938684 0.3 1.26734
+  rotation -0.0842077 -0.507981 0.857242 4.34648
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 1.72664 0.3 -6.40217
+  rotation -0.0842077 -0.507981 0.857242 4.34648
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 0.22875 0.3 1.92119
+  rotation 0 1 0 1.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation -2.88952 0.3 3.00859
+  rotation 0 1 0 0.2
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 3.86816 0.3 5.5137
+  rotation 0 1 0 1.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 3.88412 0.3 6.1954
+  rotation 0 1 0 2.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 4.62088 0.3 5.70837
+  rotation 0 1 0 1.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation -3.39279 0.3 2.39271
+  rotation 0 1 0 5.3
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 0.201504 0.3 -5.00126
+  rotation 0 1 0 5.4
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 3.11557 0.3 -6.16179
+  rotation 0 0.957826 0.287348 5.7
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF LARGE_BOX Solid {
+  translation 2.50305 0.3 -6.08045
+  rotation 0 1 0 5.3
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.6 0.6 0.6
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -0.746408 0.2 -3.30172
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -1.50953 0.2 -1.92297
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -0.630462 0.2 -2.84611
+  rotation 0 1 0 0.6
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -3.28887 0.2 3.4729
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -3.21417 0.2 1.90278
+  rotation 0 1 0 1.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -0.228929 0.2 2.22414
+  rotation 0 1 0 1.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation 3.51464 0.2 5.11118
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation 4.39232 0.2 6.09533
+  rotation 0 1 0 0.56
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -2.36426 0.2 1.42554
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -2.90343 0.2 2.44951
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -2.55232 0.2 2.87834
+  rotation 0 1 0 2.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation -1.50836 0.2 -2.53038
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation 2.49721 0.2 -6.65647
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
+DEF SMALL_BOX Solid {
+  translation 2 0.2 -6
+  rotation 0 1 0 0.1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.4 0.4 0.4
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.4 0.4 0.4
+  }
+  locked TRUE
+}
 DEF PERSON1 Solid {
-  translation -3.48962 0.25 8.52329
+  translation 3.00938 0.25 9.2497
   rotation 0 1 0 1.5708
   children [
     Shape {
@@ -726,7 +1223,7 @@ DEF PERSON1 Solid {
   locked TRUE
 }
 DEF PERSON2 Solid {
-  translation 1.55247 0.25 9.46503
+  translation -2.30465 0.25 9.34306
   rotation 0 1 0 1.5708
   children [
     Shape {
@@ -974,8 +1471,8 @@ DEF FLOOR Solid {
   locked TRUE
 }
 DEF PIONEER2 DifferentialWheels {
-  translation 0 0 -9
-  rotation 0 1 0 3.14159
+  translation -1.35052 0 -8.81968
+  rotation 0 1 0 3.69077
   children [
     Compass {
     }
@@ -1066,7 +1563,7 @@ DEF PIONEER2 DifferentialWheels {
       width 160
       height 160
       spherical TRUE
-      windowPosition 0.896774 0.779917
+      windowPosition 0.896774 0.775791
       pixelSize 2
       antiAliasing TRUE
     }
@@ -1590,7 +2087,7 @@ DEF PIONEER2 DifferentialWheels {
     ]
   }
   battery [
-    999510, 1e+06, 1e+06
+    998886, 1e+06, 1e+06
   ]
   cpuConsumption 0.2
   motorConsumption 0.1
@@ -1598,4 +2095,6 @@ DEF PIONEER2 DifferentialWheels {
   wheelRadius 0.0825
   speedUnit 0.1
   slipNoise 0.4
+  encoderNoise 0
+  encoderResolution 5
 }
