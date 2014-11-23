@@ -1,9 +1,9 @@
 Robotics UC3M
 ============
 
-C++ examples of the subject Robotics. Only valid until Webots version 7.2.4.
-Bachelor's Degree in Industrial Electronics and Automation
-University Carlos III of Madrid.
+C++ examples of the subject Robotics. Only valid until Webots version 7.2.4. <br>
+Bachelor's Degree in Industrial Electronics and Automation <br>
+University Carlos III of Madrid. <br>
 Leganes, Madrid, Spain.
 
 <b>Contact info:</b>
