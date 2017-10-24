@@ -10,6 +10,7 @@
  */
 
 #include <iostream>
+#include <webots/DistanceSensor.hpp>
 #include <webots/DifferentialWheels.hpp>
 
 using namespace std;
