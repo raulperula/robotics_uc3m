@@ -1,4 +1,4 @@
-#VRML_SIM V6.0 utf8
+#VRML_SIM V8.6 utf8
 WorldInfo {
   info [
     "The model of the Pioneer 2 robot"
@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation -0.581528 -0.568056 -0.582355 2.10523
-  position 0.657546 32.5988 2.32034
+  orientation -0.44240387 -0.77924054 -0.44391778 1.8152408
+  position -12.002643 26.360692 0.14586022
 }
 Background {
   skyColor [
@@ -18,85 +18,71 @@ Background {
   ]
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 -5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 -5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 0
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 -5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 -10
   radius 1000
@@ -108,19 +94,16 @@ PointLight {
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 0
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 10
   radius 1000
@@ -1524,7 +1507,7 @@ DEF STARTLINE Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1545,7 +1528,7 @@ DEF LINE_M6 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1566,7 +1549,7 @@ DEF LINE_M4 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1587,7 +1570,7 @@ DEF LINE_M2 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1608,7 +1591,7 @@ DEF LINE_0 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1629,7 +1612,7 @@ DEF LINE_P2 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1650,7 +1633,7 @@ DEF LINE_P4 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1671,7 +1654,7 @@ DEF LINE_P6 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1692,7 +1675,7 @@ DEF FINISHLINE Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1782,7 +1765,6 @@ DEF PIONEER2 DifferentialWheels {
       fieldOfView 0.8
       width 240
       height 160
-      windowPosition 0.922581 0.110041
       antiAliasing TRUE
     }
     DEF SPHERICAL_CAMERA Camera {
@@ -1847,8 +1829,6 @@ DEF PIONEER2 DifferentialWheels {
       width 160
       height 160
       spherical TRUE
-      windowPosition 0.896774 0.778542
-      pixelSize 2
       antiAliasing TRUE
     }
     GPS {

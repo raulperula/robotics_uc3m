@@ -1,4 +1,4 @@
-#VRML_SIM V6.0 utf8
+#VRML_SIM V8.6 utf8
 WorldInfo {
   info [
     "The model of the Pioneer 2 robot"
@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation 0.575092 0.546831 0.608477 4.19948
-  position 1.08373 32.9078 4.70962
+  orientation 0.37824827 0.83127571 0.40731921 4.6178252
+  position -18.415872 26.724725 3.0482971
 }
 Background {
   skyColor [
@@ -18,62 +18,53 @@ Background {
   ]
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 5
   on FALSE
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 -5
   on FALSE
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 -10
   on FALSE
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 5
   on FALSE
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 0
   on FALSE
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 -5
   on FALSE
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 -10
   on FALSE
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 -10
   on FALSE
@@ -87,58 +78,47 @@ PointLight {
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 5
   radius 1000
 }
 DEF CiviliansRoomLight SpotLight {
-  ambientIntensity 1
   attenuation 1 0.2 0.005
   beamWidth 1
   cutOffAngle 1.57
   direction -0.54 0 -0.05
-  intensity 1.57
   location 4.77 0.83 9.32
   castShadows TRUE
 }
 DEF StartRoomLight2 SpotLight {
-  ambientIntensity 2
   attenuation 1 0.2 0.01
   beamWidth 1
   cutOffAngle 1.57
   direction -0.54 0 -0.05
-  intensity 1.57
   location 4.77 0.83 -7.95
   castShadows TRUE
 }
 DEF StartRoomLight1 SpotLight {
-  ambientIntensity 2
   attenuation 1 0.2 0.01
   beamWidth 1
   cutOffAngle 1.57
   direction 0.5 0 -0.33
-  intensity 2
   location -5 0.83 -7.71
   castShadows TRUE
 }
 DEF Corridor1Light SpotLight {
-  ambientIntensity 2
   attenuation 1 0.2 0.01
   beamWidth 1
   cutOffAngle 1.57
   direction 0.5 0 -0.33
-  intensity 2
   location -5 0.83 -1
   castShadows TRUE
 }
 DEF Corridor2Light SpotLight {
-  ambientIntensity 2
   attenuation 1 0.2 0.01
   beamWidth 1.2
   cutOffAngle 1.57
   direction -0.9 0 0
-  intensity 2
   location 4.77 0.83 2
   castShadows TRUE
 }
@@ -702,7 +682,7 @@ DEF LARGE_BOX Solid {
 }
 DEF LARGE_BOX Solid {
   translation -0.0938684 0.3 1.26734
-  rotation -0.0842077 -0.507981 0.857242 4.34648
+  rotation -0.084207722 -0.50798113 0.85724222 4.34648
   children [
     Shape {
       appearance Appearance {
@@ -722,7 +702,7 @@ DEF LARGE_BOX Solid {
 }
 DEF LARGE_BOX Solid {
   translation 1.72664 0.3 -6.40217
-  rotation -0.0842077 -0.507981 0.857242 4.34648
+  rotation -0.084207722 -0.50798113 0.85724222 4.34648
   children [
     Shape {
       appearance Appearance {
@@ -882,7 +862,7 @@ DEF LARGE_BOX Solid {
 }
 DEF LARGE_BOX Solid {
   translation 3.11557 0.3 -6.16179
-  rotation 0 0.957826 0.287348 5.7
+  rotation 0 0.95782623 0.28734807 5.7
   children [
     Shape {
       appearance Appearance {
@@ -1261,7 +1241,7 @@ DEF STARTLINE Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1282,7 +1262,7 @@ DEF LINE_M6 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1303,7 +1283,7 @@ DEF LINE_M4 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1324,7 +1304,7 @@ DEF LINE_M2 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1345,7 +1325,7 @@ DEF LINE_0 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1366,7 +1346,7 @@ DEF LINE_P2 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1387,7 +1367,7 @@ DEF LINE_P4 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1408,7 +1388,7 @@ DEF LINE_P6 Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1429,7 +1409,7 @@ DEF FINISHLINE Solid {
     }
   ]
   boundingObject Box {
-    size 1e-06 1e-06 1e-06
+    size 1e-6 1e-6 1e-6
   }
   locked TRUE
 }
@@ -1519,7 +1499,6 @@ DEF PIONEER2 DifferentialWheels {
       fieldOfView 0.8
       width 240
       height 160
-      windowPosition 0.922581 0.110041
       antiAliasing TRUE
     }
     DEF SPHERICAL_CAMERA Camera {
@@ -1584,8 +1563,6 @@ DEF PIONEER2 DifferentialWheels {
       width 160
       height 160
       spherical TRUE
-      windowPosition 0.896774 0.775791
-      pixelSize 2
       antiAliasing TRUE
     }
     GPS {

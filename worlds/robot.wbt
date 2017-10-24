@@ -1,4 +1,4 @@
-#VRML_SIM V6.0 utf8
+#VRML_SIM V8.6 utf8
 WorldInfo {
   info [
     "The model of the Pioneer 2 robot"
@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation 0.00644902 -0.794141 -0.607699 3.03852
-  position -0.203609 1.92432 -9.48561
+  orientation 0.021851027 -0.99825171 -0.054918666 1.4170084
+  position -1.866912 0.28339572 -8.8057151
   follow "pioneer2"
 }
 Background {
@@ -19,116 +19,98 @@ Background {
   ]
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 -5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 -5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -3 6 10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 3 6 10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 0
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 -5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location 6 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
   intensity 0.3
   location -6 6 -5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 0
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 5
   radius 1000
 }
 PointLight {
-  ambientIntensity 4
   intensity 0.1
   location -6 6 10
   radius 1000
 }
 DEF PIONEER2 DifferentialWheels {
   translation 0 0 -9
-  rotation 0 1 0 3.14159
+  rotation -2.5447377e-14 1 1.9179586e-8 3.14159
   children [
     Compass {
     }
@@ -154,8 +136,6 @@ DEF PIONEER2 DifferentialWheels {
       fieldOfView 0.8
       width 240
       height 160
-      windowPosition 0.811359 0.13786
-      pixelSize 0
       antiAliasing TRUE
     }
     DEF SPHERICAL_CAMERA Camera {
@@ -220,8 +200,6 @@ DEF PIONEER2 DifferentialWheels {
       width 160
       height 160
       spherical TRUE
-      windowPosition 0.273834 0.265432
-      pixelSize 0
       antiAliasing TRUE
     }
     GPS {
@@ -370,7 +348,7 @@ DEF PIONEER2 DifferentialWheels {
     }
     Solid {
       translation 0.1603 0.0825 0
-      rotation 1 0 0 2.64154
+      rotation 1 0 0 2.9033394
       children [
         USE WHEEL
       ]
