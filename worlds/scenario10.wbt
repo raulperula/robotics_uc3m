@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation -0.44240387 -0.77924054 -0.44391778 1.8152408
-  position -12.002643 26.360692 0.14586022
+  orientation -0.50948734 -0.68873695 -0.51581398 1.9418934
+  position -8.6885435 31.967301 1.5685876
 }
 Background {
   skyColor [
@@ -18,93 +18,110 @@ Background {
   ]
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 3 6 5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -3 6 5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -3 6 -5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 3 6 -5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 3 6 -10
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -3 6 -10
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -3 6 10
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 3 6 10
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 6 6 10
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 6 6 5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 6 6 0
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 6 6 -5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location 6 6 -10
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -6 6 -10
   radius 1000
 }
 PointLight {
-  ambientIntensity 1
+  ambientIntensity 0.1
   intensity 0.3
   location -6 6 -5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -6 6 0
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -6 6 5
   radius 1000
 }
 PointLight {
-  intensity 0.1
+  ambientIntensity 0.1
+  intensity 0.05
   location -6 6 10
   radius 1000
 }

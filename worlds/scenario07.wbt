@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation 0.42927741 0.75839667 0.49046448 4.4701315
-  position -4.4385811 9.7475037 -5.6078158
+  orientation 0.27596241 0.89495389 0.35057422 4.5957569
+  position -7.2397702 8.0658997 -5.8731268
 }
 Background {
   skyColor [
@@ -124,7 +124,7 @@ DEF LARGE_BOX Solid {
 }
 DEF LARGE_BOX Solid {
   translation -2.52125 0.3 -3.52382
-  rotation 0.274721 0.96152399 0 2.2
+  rotation 0.274721 0.96152398 0 2.2
   children [
     Shape {
       appearance Appearance {

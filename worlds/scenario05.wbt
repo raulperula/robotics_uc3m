@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation -0.44563936 -0.75617246 -0.47917509 1.7547091
-  position -11.740537 27.670989 3.0642584
+  orientation -0.51516417 -0.65092195 -0.5575899 1.9227325
+  position -6.3341414 29.251102 2.9514539
 }
 Background {
   skyColor [

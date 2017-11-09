@@ -9,8 +9,8 @@ WorldInfo {
   northDirection -1 0 -1
 }
 Viewpoint {
-  orientation 0.39445505 0.8363708 0.380643 4.7819561
-  position -19.201441 21.721777 5.94197
+  orientation 0.48647907 0.70100222 0.52147292 4.4469905
+  position -9.9629044 28.56019 2.9512742
   follow "pioneer2"
 }
 Background {
